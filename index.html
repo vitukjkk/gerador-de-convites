@@ -11,10 +11,163 @@
         <h1>Gerador de convites</h1>
     </header>
     <main>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ab sed, eius autem molestias vel error officia delectus dignissimos provident consectetur iure expedita explicabo recusandae sit quos! Veniam, temporibus eaque.
+        <fieldset>
+            <legend>Informações básicas</legend>
+            <div class="divCentral">
+                <div>
+                    <form>
+                        <label for="eventname">Nome do evento</label><br>
+                        <input
+                            type="text"
+                            id="eventname"
+                            placeholder="Digite o nome do evento"> <br>
+                        <label for="eventdate">Data e local</label> <br>
+                        <input
+                            id="eventdate"
+                            type="datetime-local"> <br>
+                    <label for="eventdesc">Descrição</label><br>
+                        <textarea
+                            maxlength="1028"
+                            rows="10"
+                            cols="30"
+                            placeholder="Escreva uma descrição com no máximo 1028 caracteres"
+                        ></textarea>
+                    </form>
+                </div>
+                <div class="divRight">
+                    <form>
+                        <label for="eventplacer-name">Nome do anfitrião</label> <br>
+                        <input
+                            id="eventplacer-name"
+                            type="text"
+                            placeholder="Digite o nome do anfitrião"> <br>
+                        <label for="eventplacer-phone">Telefone do anfitrião</label> <br>
+                        <input
+                            id="eventplacer-phone"
+                            type="text"
+                            placeholder="(**) * ****-****"> <br>
+                        <label for="eventplacer-email">E-mail do anfitrião</label> <br>
+                        <input
+                            id="eventplacer-email"
+                            type="email"
+                            placeholder="Digite um e-mail válido">
+                    </form>
+                </div>
+            </div>
+            </fieldset>
+        </div>
+        <fieldset>
+            <legend>Personalização do convite</legend>
+            <div class="divCentral">
+                <div>
+                <label for="convidadoname">Nome do convidado</label><br>
+                <input
+                    id="convidadoname"
+                    type="text"
+                    placeholder="Digite o nome do convidado">
+                </div>
+                <div>
+                    <label for="convidadomsg">Mensagem personalizada</label><br>
+                    <input
+                        id="convidadomsg"
+                        type="text"
+                        placeholder="Digite uma mensagem personalizada de até 1028 caracteres (Opcional)"
+                        maxlength="1028">
+                </div>
+                <div>
+                    <label for="convidadofriends">Acompanhantes</label><br>
+                    <input
+                        id="convidadofriends"
+                        type="number"
+                        max="5"
+                        min="0"
+                        placeholder="0-5">
+                </div>
+                <div>
+                    <label>Preferência alimentar</label><br>
+                    <input
+                        id="convidadooption"
+                        type="radio"
+                        name="comidapref">Vegetariano</input><br>
+                    <input
+                        id="convidadooption"
+                        type="radio"
+                        name="comidapref">Vegano</input><br>
+                    <input
+                        id="convidadooption"
+                        type="radio"
+                        name="comidapref">Alérgico</input><br>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Detalhes do evento</legend>
+            <div class="divCentral">
+                <div>
+                    <label for="eventoname">Nome do evento</label><br>
+                    <input
+                        id="eventoname"
+                        type="text"
+                        placeholder="Digite o nome do evento">
+                    </div>
+                <div>
+                    <label for="eventodesc">Descrição do evento</label><br>
+                    <textarea 
+                        name="eventodesc" 
+                        id="eventodesc"
+                        minlength="7"
+                        maxlength="1028"
+                        placeholder="Digite uma descrição do evento"></textarea>
+                </div>
+                <div>
+                    <label for="eventaddress">Endereço</label><br>
+                    <input
+                        id="eventaddress"
+                        type="text"
+                        placeholder="Digite o endereço do evento">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Observações</legend>
+            <label for="eventobs">Ponderações</label><br>
+            <textarea
+                id="eventobs"
+                name="eventobs"
+                maxlength="1028"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Design e layout</legend>
+            <div class="divCentral">
+                <div>
+                    <form>
+                        <label for="corconvite">Cor do convite</label><br>
+                        <input
+                            id="corconvite"
+                            type="color"
+                            value="#FF00FF">
+                    </form>
+                </div>
+                <div>
+                    <form>
+                        <label for="orientacaoconvite">Orientação</label><br>
+                        <input
+                            id="radio01"
+                            name="orientacaoconvite"
+                            type="radio">Retrato</input>
+                        <input
+                            id="radio02"
+                            name="orientacaoconvite"
+                            type="radio">Paisagem</input>
+                    </form>
+                </div>
+            </div>
+        </fieldset>
+        <button type="reset">Limpar</button>
+        <button type="submit">Criar</button>
     </main>
     <footer>
-        desenvolvido por <a href="https://github.com/vitukjkk/" style="color:gray">vitukjkkk</a>
+        desenvolvido por <a href="https://github.com/vitukjkk/" style="color:gray" target="_blank">vitukjkkk</a> - 2024
     </footer>
 </body>
 </html>

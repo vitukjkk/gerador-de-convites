@@ -1,19 +1,58 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    overflow: auto;
 }
 
 header {
     background-color: black;
     color: white;
+    padding: .1rem;
 }
 
 main {
     background-color: white;
     color: black;
+    padding: 1rem;   
 }
 
 footer {
     background-color: black;
     color: white;
+    padding: .3rem;
+}
+
+fieldset {
+    margin: .5rem;
+    legend {
+        text-align: left;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: .4rem;
+}
+
+/* CLASSES CRIADAS */
+
+.divCentral {
+    display: flex;
+    justify-content: space-around;
+
+    label, input {
+        margin: .5rem;
+    }
+
+    textarea {
+        resize: none;
+    }
+}
+
+#eventobs {
+    width: 50rem;
+    height: 20rem;
 }
